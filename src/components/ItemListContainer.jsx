@@ -1,20 +1,30 @@
-import React from 'react'
-
+import React, { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
+import ItemList from './ItemList'
+import pedirDatos from '../helper/pedirDatos.js'
 
 const ItemListContainer = () => {
 
+    const [productos, setProductos] = useState([]);
+    const categoria = useParams().categoria;
+
+    useEffect(() => {
+      pedirDatos()
+      .then((res) => {
+        if (categoria) {
+          setProductos(res.filter((prod) => prod.categoria === categoria));
+        } else {
+          setProductos(res);
+        }
+        
+      })
+  }, [categoria])
+        
   return (
     <>
-    <div className='boton-contenedor'>
-        <h1>Compra Rapida</h1>
-        <p>Agrega articulos al carrito</p>
-        <small>(No funcional aun)</small>
-        <ul className='item-list'>            
-            <li>Zapatilla</li>
-            <li>Remera</li>
-            <li>Pantalon</li>
-        </ul>       
-    </div>
+
+      <ItemList productos={productos}/>
+
     </>
   )
 }

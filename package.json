@@ -1,3 +1,4 @@
+
 {
   "name": "my-app",
   "private": true,
@@ -17,7 +18,9 @@
     "@emotion/styled": "^11.11.0",
     "framer-motion": "^10.16.9",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.21.0",
+    "router-dom": "^2.2.11"
   },
   "devDependencies": {
     "@types/react": "^18.2.37",

@@ -1,20 +1,13 @@
 import React from 'react'
 import { useState } from 'react'
-import {StarIcon} from '@chakra-ui/icons'
 
 
-const CartWidget = () => {  
-
-  const [contador, setContador] = useState(0)
-
-  console.log(contador)
-
-
+const CartWidget = ({cards}) => {
   return (
     <>
     <div>
-      <StarIcon />
-      <small>{contador}</small>
+      <i className="bi bi-cart carrito"></i>     
+      <small className='numerito'>0</small>
       </div>
     </>
   )

@@ -1,0 +1,56 @@
+[
+    {
+        "id": "monica",
+        "titulo": "Jean Monica",
+        "descripcion": "Jean liso tiro medio",
+        "categoria": "pantalones",
+        "imagen": "https://d28hi93gr697ol.cloudfront.net/5646e918-d176-22e4-d91a-f26925779080/img/Producto/1e6df059-8a18-245a-cafa-dadf88b1b135/WhatsApp-Image-2023-12-11-at-5-34-44-PM-657772bb424e8.webp",
+        "precio": 1500,
+        "stock": 10
+    },
+    {
+        "id": "parachute",
+        "titulo": "Parachute Madrid",
+        "descripcion": "De sire con elástico en cintura",
+        "categoria": "pantalones",
+        "imagen": "https://d28hi93gr697ol.cloudfront.net/5646e918-d176-22e4-d91a-f26925779080/img/Producto/7689184c-25b2-bdde-1e5f-d36876467432/WhatsApp-Image-2023-11-27-at-10-23-49-4-6564b451dd3a3.webp",
+        "precio": 1500,
+        "stock": 10
+    },
+    {
+        "id": "dallas",
+        "titulo": "Campera Dallas",
+        "descripcion": "Oversize negra con Roturas",
+        "categoria": "camperas",
+        "imagen": "https://d28hi93gr697ol.cloudfront.net/5646e918-d176-22e4-d91a-f26925779080/img/Producto/e870dfc2-f7ee-5eb4-5368-137451f065f9/WhatsApp-Image-2022-12-15-at-17-36-02-639c5bf0bddc6-64e5fe672921b.webp",
+        "precio": 1500,
+        "stock": 10
+    },
+    {
+        "id": "adara",
+        "titulo": "Campera Adara",
+        "descripcion": "Campera Adara clasica",
+        "categoria": "camperas",
+        "imagen": "https://d28hi93gr697ol.cloudfront.net/5646e918-d176-22e4-d91a-f26925779080/img/Producto/7c42d8a3-518f-852d-0d25-856050d945fb/WhatsApp-Image-2022-07-14-at-4-49-04-PM-62d07a1a9834b.webp",
+        "precio": 1500,
+        "stock": 10
+    },
+    {
+        "id": "newyork",
+        "titulo": "Remera NEW YORK",
+        "descripcion": "Remera NEW YORK de algodón",
+        "categoria": "remeras",
+        "imagen": "https://d28hi93gr697ol.cloudfront.net/5646e918-d176-22e4-d91a-f26925779080/img/Producto/9b32866a-03c0-0b25-11bd-e52a03053b79/WhatsApp-Image-2023-12-19-at-09-37-30-6581a44707f5c.webp",
+        "precio": 1500,
+        "stock": 10
+    },
+    {
+        "id": "mcqueen",
+        "titulo": "Remera McQUEEN",
+        "descripcion": "Remera McQUEEN de algodón",
+        "categoria": "remeras",
+        "imagen": "https://d28hi93gr697ol.cloudfront.net/5646e918-d176-22e4-d91a-f26925779080/img/Producto/80536b34-7371-02eb-2074-2baca88bccbc/WhatsApp-Image-2023-12-19-at-09-38-29-1-6581a40357e80.webp",
+        "precio": 1500,
+        "stock": 10
+    }
+]

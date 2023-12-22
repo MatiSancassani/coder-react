@@ -7,10 +7,13 @@ import {
   MenuList,
   MenuItem,
   Flex,
+  Box,
 } from '@chakra-ui/react'
 import { Avatar, AvatarBadge, AvatarGroup } from '@chakra-ui/react'
 import { Wrap, WrapItem } from '@chakra-ui/react'
 import { Input } from '@chakra-ui/react'
+import logo from './loho2.png';
+import { Link } from 'react-router-dom'
 
 
 
@@ -21,24 +24,25 @@ const NavBar = () => {
     <>
     <Flex align="center" justify="space-evenly">
     <Menu>
-        <MenuButton fontSize={"1.5rem"} color={"#495D63"} borderRadius={"none"} border={"none"}> 
-          Liquidacion
-          <ChevronDownIcon boxSize={"2rem"}/>
-        </MenuButton>
-        <MenuList>
-          <MenuItem>Remeras</MenuItem>
-          <MenuItem>Camperas</MenuItem>
-          <MenuItem>Sweater</MenuItem>
-          <MenuItem>Chalecos</MenuItem>
-          <MenuItem>Buzos</MenuItem>
-        </MenuList>
+        <Link to={"/"}><Box className='boton'>Inicio</Box></Link>
+          <MenuButton className='liquidacion'> 
+            Categorias
+            <ChevronDownIcon boxSize={"2rem"}/>
+          </MenuButton>
+          <MenuList color={"black"} >
+              <Link to={"/productos/pantalones"}><MenuItem>Pantalones</MenuItem></Link>
+              <Link to={"/productos/remeras"}><MenuItem>Remeras</MenuItem></Link>
+              <Link to={"/productos/camperas"}><MenuItem>Camperas</MenuItem></Link>
+          </MenuList>        
+          <Link><Box className='boton'>Sobre Nosotros</Box></Link>
+          <Link><Box className='boton'>Contacto</Box></Link>
     </Menu>
-    <Input width={"50%"} placeholder='Buscar productos' />    
-    <CartWidget />
+    <Input className='busqueda' color={"black"} background={"white"} width={"35%"} placeholder='Buscar productos' border={"none"}/>    
+        <CartWidget />
           <Wrap >
         <WrapItem>
-          <h2 id='titulo-header'>Bienvenido!</h2>
-          <Avatar cursor={"pointer"} name='Dan Abrahmov' src='https://bit.ly/dan-abramov' />
+          <p id='titulo-header'>Bienvenido!</p>
+          <Avatar cursor={"pointer"} name='Dan Abrahmov' src={logo} />
         </WrapItem>  
         </Wrap>
     </Flex>
